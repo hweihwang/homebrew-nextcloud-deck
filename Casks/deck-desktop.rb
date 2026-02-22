@@ -2,9 +2,9 @@ cask "deck-desktop" do
   arch arm: "arm64", intel: "x64"
 
   version "0.1.3"
-  sha256 arm: "34888db9c4c09b3a6e6a00e8a4a3ce6e3545f7ed235198d99b470a570266a7e0", intel: "1a4033ad036ce0303f01738d9a227003387df20476204288b064bc76c7c13bf9"
+  sha256 arm: "291d86b41b5a510d6ccaa37a0b28b05798c5900e61072469fb4ab4aa033f4b0d", intel: "266f89cda6021f245c9a0b2180ab1cf053165f840d463c5fbb846152e4ad1902"
 
-  url "https://github.com/hweihwang/nextcloud-deck-desktop-releases/releases/download/v#{version}/deck-desktop-mac-#{arch}.zip",
+  url "https://github.com/hweihwang/nextcloud-deck-desktop-releases/releases/download/v#{version}/deck-desktop-mac-#{arch}.dmg",
       verified: "github.com/hweihwang/nextcloud-deck-desktop-releases/"
   name "Deck Desktop"
   desc "Unofficial desktop client for Nextcloud Deck on macOS."
