@@ -1,8 +1,8 @@
 cask "deck-desktop" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.1.6"
-  sha256 arm: "ee3e2a8ab521b36863ead4571f2a5cbdbd3d2bb294c666c39585c35555768ba6", intel: "205a24b4a9500acc0d95b606a74947d1d94d2fdf8088596b99fb7fa5ea28e8cb"
+  version "0.1.7"
+  sha256 arm: "0a3ff3ac23e26c493a403995b8bd00fe52722ca55bfd552a262cb61eadb8ce91", intel: "37ba7d616afd4b44f626bff5e50ff045e30956b737dd3b403e5f528f82128162"
 
   url "https://github.com/hweihwang/nextcloud-deck-desktop-releases/releases/download/v#{version}/deck-desktop-mac-#{arch}.dmg",
       verified: "github.com/hweihwang/nextcloud-deck-desktop-releases/"
