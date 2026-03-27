@@ -1,25 +1,22 @@
 cask "deck-desktop" do
-  arch arm: "arm64", intel: "x64"
+  version "0.2.0"
+  sha256 "da0c243194f62b0fc89cbda225e1ee42ecbdde85b18f9af86b903b0a3637a55e"
 
-  version "0.1.8"
-  sha256 arm: "6c62fe5815b865ec68f03f50fc7bcf878aec9e07b60d6e96c468d4b7d1649352", intel: "1adda9e1e6669f88c28546192f41fc5e230f9cf6d9f49bfaec30381a1578349c"
-
-  url "https://github.com/hweihwang/nextcloud-deck-desktop-releases/releases/download/v#{version}/deck-desktop-mac-#{arch}.dmg",
+  url "https://github.com/hweihwang/nextcloud-deck-desktop-releases/releases/download/v#{version}/deck-desktop-mac-arm64.dmg",
       verified: "github.com/hweihwang/nextcloud-deck-desktop-releases/"
   name "Deckloud"
-  desc "Deckloud for macOS — a native Nextcloud Deck client. Also available on the App Store for iOS."
+  desc "Deckloud for Nextcloud"
   homepage "https://deckloud.com"
 
+  depends_on arch: :arm64
   auto_updates true
-  depends_on macos: ">= :ventura"
 
   app "Deckloud.app"
 
   uninstall quit: "com.hweihwang.nextcloud-deck"
 
   zap trash: [
-    "~/Library/Application Support/Nextcloud Deck",
-    "~/Library/Application Support/Deckloud",
+    "~/Library/Application Support/nextcloud-deck-desktop",
     "~/Library/Caches/com.hweihwang.nextcloud-deck",
     "~/Library/Preferences/com.hweihwang.nextcloud-deck.plist",
     "~/Library/Saved Application State/com.hweihwang.nextcloud-deck.savedState",
