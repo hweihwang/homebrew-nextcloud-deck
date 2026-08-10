@@ -1,6 +1,6 @@
 cask "deck-desktop" do
-  version "0.8.0"
-  sha256 "2b14f2874ed10b1b5a1ce76c14c45c65dfcb4826efdf089d9a31d05feab84c0d"
+  version "0.8.1"
+  sha256 "afe41e9a7a910051c1cf71480283360c331fbb7962cfc493a402d7526f0e7035"
 
   url "https://github.com/hweihwang/nextcloud-deck-desktop-releases/releases/download/v#{version}/stable-macos-arm64-Deckloud.dmg",
       verified: "github.com/hweihwang/nextcloud-deck-desktop-releases/"
