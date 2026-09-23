@@ -10,6 +10,8 @@ cask "nextcloud-deck" do
   desc "Nextcloud Deck desktop client for macOS."
   homepage "https://deck.hweihwang.dev/"
 
+  deprecate! date: "2026-09-23", because: "was renamed to Deckloud", replacement_cask: "deck-desktop"
+
   auto_updates true
   depends_on macos: ">= :ventura"
 
