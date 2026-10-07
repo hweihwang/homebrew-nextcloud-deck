@@ -1,15 +1,15 @@
 cask "deck-desktop" do
-  version "0.9.0"
-  sha256 "91a90051363ad6713fb3e113806883983665cc78b61e6b4bfa920a320edd46c4"
+  version "0.9.1"
+  sha256 "312f362aaa75c6dc2ca065f62b7725a8fa4fdf250e25b06925504b3621c2e56f"
 
-  url "https://github.com/hweihwang/nextcloud-deck-desktop-releases/releases/download/v#{version}/stable-macos-arm64-Deckloud.dmg",
-      verified: "github.com/hweihwang/nextcloud-deck-desktop-releases/"
+  url "https://github.com/hweihwang/nextcloud-deck-desktop-releases/releases/download/v#{version}/stable-macos-arm64-Deckloud.dmg"
   name "Deckloud"
   desc "Desktop client for Nextcloud Deck kanban boards"
-  homepage "https://deckloud.com"
+  homepage "https://deckloud.com/"
 
-  depends_on arch: :arm64
   auto_updates true
+  depends_on arch: :arm64
+  depends_on :macos
 
   app "Deckloud.app"
 
