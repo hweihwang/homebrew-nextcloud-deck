@@ -1,6 +1,6 @@
 cask "deck-desktop" do
-  version "0.9.24"
-  sha256 "95f36a9ddf8a1f2208f469e8f491fcbab19551a7e942b8929409c698d775456d"
+  version "0.9.25"
+  sha256 "f6a6f51bf2bef3767b769a57e5b02142f4e4e4b9a57ed039aa75b57d9cf127bf"
 
   url "https://github.com/hweihwang/nextcloud-deck-desktop-releases/releases/download/v#{version}/stable-macos-arm64-Deckloud.dmg"
   name "Deckloud"
@@ -16,9 +16,19 @@ cask "deck-desktop" do
   uninstall quit: "com.hweihwang.nextcloud-deck"
 
   zap trash: [
+    "~/Library/Application Support/Deckloud",
+    "~/Library/Application Support/com.hweihwang.nextcloud-deck",
     "~/Library/Application Support/nextcloud-deck-desktop",
     "~/Library/Caches/com.hweihwang.nextcloud-deck",
+    "~/Library/Containers/com.hweihwang.nextcloud-deck.intents",
+    "~/Library/Containers/com.hweihwang.nextcloud-deck.notifications",
+    "~/Library/Containers/com.hweihwang.nextcloud-deck.share",
+    "~/Library/Containers/com.hweihwang.nextcloud-deck.widget",
+    "~/Library/Group Containers/ZYC8QP9W3T.group.com.hweihwang.nextcloud-deck",
+    "~/Library/HTTPStorages/com.hweihwang.nextcloud-deck",
+    "~/Library/Preferences/com.hweihwang.nextcloud-deck.notifications.plist",
     "~/Library/Preferences/com.hweihwang.nextcloud-deck.plist",
     "~/Library/Saved Application State/com.hweihwang.nextcloud-deck.savedState",
+    "~/Library/WebKit/com.hweihwang.nextcloud-deck",
   ]
 end
