@@ -1,6 +1,6 @@
 cask "deck-desktop" do
-  version "0.9.37"
-  sha256 "e67bd34a8675970d9c751b9360450c0d66127d952a94a27f895b79c6e2090d22"
+  version "0.9.38"
+  sha256 "f5337de46fdb8ce4f27260dca1d52a4bf671af0db36acc9af323b35b00041ecb"
 
   url "https://github.com/hweihwang/nextcloud-deck-desktop-releases/releases/download/v#{version}/stable-macos-arm64-Deckloud.dmg"
   name "Deckloud"
